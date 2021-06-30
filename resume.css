@@ -9,7 +9,7 @@ body{
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: darkgray;
+    background:/*wheat*/darkslateblue ;
 
 }
 .container{
@@ -55,8 +55,68 @@ body{
     filter: blur(30px);
     transition: 0.5s;
 }
+.container .box:hover:before,
+.container .box:hover:after{
+    transform:skewX(0deg);
+    left:20px;
+    width:calc(100% - 90px);
+}
+.container .box:nth-child(1):before,
+.container .box:nth-child(1):after{
+    background: linear-gradient(315deg,#d1b542,#ff0058);
+}
+.container .box:nth-child(2):before,
+.container .box:nth-child(2):after{
+    background: linear-gradient(315deg,#d1b542,#ff0058);
+}
+.container .box:nth-child(3):before,
+.container .box:nth-child(3):after{
+    background: linear-gradient(315deg,#d1b542,#ff0058);
+}
 
 .content
 {
-    display: none;
+    z-index: 1;
+    /*display: none;*/
+}
+.container .box .content{
+    position: relative;
+    left: 0;
+    padding:20px 40px;
+    background:rgba(225,225,225,0.05);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    border-radius: 8px;
+    backdrop-filter: blur(10px);
+    z-index:1;
+    transform:0.5s;
+    color:white;
+}
+.container .box:hover .content{
+    Left:-25px;
+    padding:60px 40px;
+}
+.container .box .content h1{
+    font-size: 2em;
+    margin-bottom:10px;
+    color: black;
+    }
+.container .box .content h2{
+font-size: 2em;
+margin-bottom:10px;
+}
+.container .box .content p{
+    font-size: 1.1em;
+    margin-bottom:10px;
+    line-height:1.4em;
+}
+.container .box .content a{
+    display:inline-block;
+    font-size:1.1em;
+    color:black;
+    background:wheat;
+    padding:10px;
+    border-radius:4px;
+    text-decoration:none;
+    font-weight: 700;
+
 }
