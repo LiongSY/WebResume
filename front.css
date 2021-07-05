@@ -1,0 +1,20 @@
+.banner-area{
+   position:absolute;
+   top:50%;
+   left:50%;
+   transform : translate(-50%,-50%);
+   text-align : center;
+   width :100%;
+
+}
+
+.banner-area h1{
+    font-size:30px;
+    text-transform: uppercase;
+    color: rgb(194, 103, 103);
+    margin: 0 0 40px 0;
+}
+
+.banner-area h1 span{
+    color: darkorange;
+}
