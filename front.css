@@ -1,20 +1,89 @@
-.banner-area{
-   position:absolute;
-   top:50%;
-   left:50%;
-   transform : translate(-50%,-50%);
-   text-align : center;
-   width :100%;
+:root{
+    --white:#fff;
+}
+
+
+
+
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+*{
+    margin:0;
+    padding:0;
+    box-sizing : border-box;
+    font-family: 'Poppins',sans-serif;
+}
+
+body{
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.wrapper{
+   display: inline-flex; 
+}
+
+.wrapper .static-txt{
+    color:rgb(143, 86, 86);
+     font-size:50px;
+     font-weight:400;
+} 
+
+.wrapper .dynamic-txts{
+     margin-left :15px;
+     height:130px;
+     line-height: 110px;
+     overflow: hidden;
+}
+
+.dynamic-txts li{
+    color:#8f0d0d;
+    list-style:none;
+    font-size:60px;
+    font-weight:500;
+    animation: slide 6s steps(1) infinite;
+    position: relative;
+    top:0;
+}
+
+
+.dynamic-txts li span::after{
+    content:"";
+    position:absolute;
+    left:0; 
+    height:120%;
+    width: 130%;
+    background: var(--white);
+    border-left :3px solid #f3b1b1;
+    animation: typing 3.0s steps(10) infinite;
+}
+
+
+@keyframes typing{
+    100%{
+        left:100%;
+        margin:0 -35px 0 35px;
+    }
+}
+
+@keyframes slide{
+    100%{
+        top:-380px;
+
+    }
+}
+
+
+.dynamic-txts li span{
+    position:relative;
 
 }
 
-.banner-area h1{
-    font-size:30px;
-    text-transform: uppercase;
-    color: rgb(194, 103, 103);
-    margin: 0 0 40px 0;
+.active{
+    --white:#000;
+    
 }
 
-.banner-area h1 span{
-    color: darkorange;
-}
+
+  

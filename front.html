@@ -1,33 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charsets ="UTF-8">
-        <title>Welcome !</title>
-        <link rel ="stylesheet" href="front.css">
+<head>
+    <meta charset="UTF-8">
+    <title> Welcome !</title>
+    <link rel ="stylesheet" href="front.css">
+    <link rel ="stylesheet" href="mode.css">
     </head>
+
 <body>
-    <div class="banner-area">
-        <h2>ABOUT US</h1>
-        <h1>WE ARE <span class="typed2"></span></h2>
-    </div>
-
-<script src=" typed.js"></script>
+  <div id="toggle">
+    <i class="indicator"></i>
+</div>
 <script>
-    var typed =new Typed('.typed2',{
-        strings:[
-            "PHP .",
-            "Java.",
-            "C language.",
-            ],
-        typeSpeed :30,
-        backSpeed: 30,
-        loop: true
-    });
+    const body = document.querySelector('body');
+    const toggle = document.getElementById('toggle');
+    toggle.onclick =function(){
+        toggle.classList.toggle ('active')
+        body.classList.toggle('active');
+    }
 </script>
+    <div class="wrapper">
+    <div class="static-txt">THIS IS OUR</div>
+    <ul class="dynamic-txts">
+      <li><span>project</span></li>
+    </ul>
+  </div>
+</body>
 
 
 
- </body>
+
+
+
+
+
+
 
 
 
