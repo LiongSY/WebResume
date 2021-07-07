@@ -5,9 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="resume.css">
+    
     <title>Resume</title>
 </head>
 <body>
+    <div id="toggle">
+        <i class="indicator"></i>
+    </div>
+    <script>
+        const body = document.querySelector('body');
+        const toggle = document.getElementById('toggle');
+        toggle.onclick =function(){
+            toggle.classList.toggle ('active')
+            body.classList.toggle('active');
+        }
+    </script>
     <div class="container">
         <div class="box">
           <span></span>
@@ -24,9 +36,6 @@
                 <h1>CHIN</h1>
                 <h2>Poh Lian</h2> 
                 <p>Resume</p>
-                <a href="#">Download CV</a>
+                <a href="CHIN POH LIAN'S RESUME LATEST.pdf" download>Download CV</a>
             </div>
           </div>
-        
-</body>
-</html>

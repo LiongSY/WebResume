@@ -2,9 +2,6 @@
     --white:#fff;
 }
 
-
-
-
 @import url('https://fonts.googleapis.com/css?family=Poppins');
 *{
     margin:0;
@@ -52,13 +49,12 @@ body{
     content:"";
     position:absolute;
     left:0; 
-    height:120%;
+    height:140%;
     width: 130%;
     background: var(--white);
     border-left :3px solid #f3b1b1;
     animation: typing 3.0s steps(10) infinite;
 }
-
 
 @keyframes typing{
     100%{
@@ -73,7 +69,6 @@ body{
 
     }
 }
-
 
 .dynamic-txts li span{
     position:relative;

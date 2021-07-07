@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="form.css">
     <link rel="stylesheet" href="mode.css">
+    <link rel="stylesheet" href="form.css"/>
+    <link href='https://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
     <title>Form</title>
 </head>
 <body>
@@ -21,32 +25,29 @@
         }
     </script>
     
-<div class="hero">
-
-    <form method="post" autocomplete="off" name="google-sheet">
-        <div class="row">
-            <div class="input-group">
-                <input type="text" id="name" name="entry." required>
-                <label for="name">NAME</label>
-            </div>
-            <div class="input-group">
-                <input type="text" id="name"name="entry." required>
-                <label for="name">EMAIL</label>
-            </div>
-        </div>
-       
-        <div class="input-group">
-            <input type="text" id="name" name="entry." required>
-            <label for="name">CONTACT NUMBER</label>
-        </div>
-        <div class="input-group">
-            <textarea id="rating" rows="8" name="entry." required></textarea>
-            <label for="rating">MESSAGES</label>
-        </div>
-        <button type="submit">Submit</button>
-    </form>
-
-</div>
+    <div class = "back">
+ <div id = "open_button">
+                        Contact Us
+                    </div>
+                    <div class = "contact_form">
+                        <form method="post" action="contact.php">
+                            <input type="text" name="name" id="name" placeholder=" Name " required>
+                    
+                            <input type="email" name="email" id="email" placeholder=" Email " required >
+                        
+                            <input type="text" name="phone" id="phone" placeholder=" Phone " autofocus> 
+                        
+                            <textarea name="message" id="message_area" placeholder=" Message " required></textarea>
+                    
+                            <input type="submit" value="Send" id="send">
+                        </form>
+                    </div>
+                    <div class = "bottom"></div>			
+                    <div class = "left"></div>
+                    <div class = "right"></div>
+                    <div class = "top"></div>
+                    <script src="form.js"></script>
+                </div>
 
 </body>
 </html>
