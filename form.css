@@ -1,10 +1,10 @@
 .back{
 	width: 600px;
 	height: 350px;
-	margin: 250px auto 0;
 	position: relative;
 	background:linear-gradient(to bottom,rgb(190, 137, 72),darkorange,rgb(190, 179, 75));
 	border-radius:0 0 40px 40px; 
+	top:150px;
 }
 #open_button{
 	width: 200px;
@@ -19,13 +19,13 @@
 	font-size: 26px;
 	padding:7px 0; 
 	border: 2px solid #fff;
-	transition:.3s;
+	transition:.5s;
 }
  #open_button:hover{
-	background: #FFf;
-	color: #2b67cb;
+	background:lightcoral;
+	color: #616a7a;
 	transform:scale(1.1);
-	transition:background .25s, transform .5s,ease-in;
+	/* transition:background .25s, transform .5s,ease-in; */
 	cursor: pointer;
 } 
  .contact_form{
@@ -35,7 +35,7 @@
 	background: #7CB342;
 	margin:auto;
 	top: 20px;
-	 transition:2s ease-in-out;
+    transition:2s ease-in-out;
 	transition-delay: 1.5s; 
 	z-index: 300;
 } 
@@ -56,15 +56,14 @@
 	border-bottom: 160px solid transparent;;
 	left:300px;
 } 
- .top{	
+  .top{	
 	border-right: 300px solid transparent;
 	border-top: 200px solid lightskyblue;
 	border-left: 300px solid transparent;
 	transition:transform 1s,border 1s, ease-in-out;
 	transform-origin:top;
-	transform:rotateX(0deg);
 	z-index: 500;
-} 
+}  
  .bottom{
 	width: 600px;
 	height: 190px;
@@ -82,24 +81,24 @@
 	border-top: 200px solid #2c3e50;
 	z-index: 200;
 } 
+
  .pull{
 	-webkit-animation:message_animation 2s 1 ease-in-out;
 	animation:message_animation 2s 1 ease-in-out;
-	-webkit-animation-delay:.9s;
 	animation-delay:.45s;
 	transition:1.5s;
 	transition-delay:1s;
 	z-index: 350;
 } 
- #name,#email,#phone,#messarea,#send{
+ #name,#email,#phone,#message_area,#send{
 	margin: 0;
-	padding: 0 0 0 10px;
+	padding: 0 0 0 0px;
 	width: 570px;
 	height:50px;
 	float: left;
 	display: block;
 	font-size: 18px;
-	color: #2b67cb;
+	color: #000;
 	border:none;
 	border-bottom:1px solid #bdbdbd;
 	letter-spacing: normal;
@@ -125,34 +124,13 @@
      transition:.35s;
     }
 
-::-moz-placeholder{
-    color: #7CB342;
-    font-family: 'Ubuntu';
-    font-size: 20px;
-    opacity: 1;
-} 
+
 ::-webkit-input-placeholder {
     color: #7CB342; 
     font-family: 'Ubuntu';
     font-size: 20px;
 
 }
-:focus {
-    outline: none;
-}
-
-/* input:focus:invalid,textarea:focus:invalid {  */
- /* when a field is considered invalid by the browser */
-     /* background: #fff url(images/invalid.png) no-repeat 98% center;
-    box-shadow: 0 0 5px #d45252;
-    border:1px solid #b03535;
-}  */
- /* input:required:valid,textarea:required:valid {   */
-	/* when a field is considered valid by the browser */
-     /* background: #fff url(images/valid.png) no-repeat 98% center;
-    box-shadow: 0 0 5px #5cd053;
-    border-color: #28921f;
-}  */
 
 
  @-webkit-keyframes message_animation {
@@ -199,3 +177,5 @@
 		transition: 1s ease-in-out;
 	}
 } 
+
+/* ----------------- */
