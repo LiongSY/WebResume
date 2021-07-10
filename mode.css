@@ -18,7 +18,7 @@ body.active
 }
 
 #toggle{
-     top:-455px;
+     top:-450px;
     left:-630px;
     position:relative;
     display:block;
@@ -41,7 +41,6 @@ body.active
                 inset 0 8px 8px rgba(0,0,0,0,1),
                 inset 0 -4px 4px rgba(0,0,0,0,1);
 }
-
 
 #toggle .indicator
 {
@@ -71,3 +70,69 @@ body.active
 }
 
 /*-----------------------------------*/
+
+
+
+
+/*----------------------------------*/
+
+@media screen and (max-width:1900px) and (min-width:1025px){
+
+    #toggle{
+        top:-390px;
+        left:-200px;
+    }
+}
+@media screen and (max-width:1024px) and (min-width:767px){
+
+    #toggle{
+        top:-390px;
+        left:-40px;
+    }
+}
+
+@media screen and (max-width:768px) and (min-width:541px){
+
+    #toggle{
+        top:-300px;
+        left:-40px;
+    }
+}
+@media screen and (max-width:540px) and (min-width:421px){
+
+    #toggle{
+        top:-340px;
+        left:-110px;
+    }
+}
+@media screen and (max-width:420px) and (min-width:374px)  {
+
+    #toggle{
+        top:-340px;
+        left:-50px;
+    
+    }
+}
+
+@media screen and (max-width:375px) and (min-width:321px)  {
+
+    #toggle{
+        top:-300px;
+        left:-25px;
+    }
+}
+
+@media screen and (max-width:320px) and (min-width:281px)  {
+
+    #toggle{
+        top:-270px;
+        left:-10px;
+    }
+}
+@media screen and (max-width:280px)   {
+
+    #toggle{
+        top:-310px;
+        left:5px;
+    }
+}
