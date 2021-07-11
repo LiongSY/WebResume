@@ -5,21 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="resume.css">
-    
+    <link rel="stylesheet" href="mode.css">
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
     <title>Resume</title>
 </head>
 <body>
+<nav>
     <div id="toggle">
         <i class="indicator"></i>
     </div>
-    <script>
-        const body = document.querySelector('body');
-        const toggle = document.getElementById('toggle');
-        toggle.onclick =function(){
-            toggle.classList.toggle ('active')
-            body.classList.toggle('active');
-        }
-    </script>
+
+    <input type="checkbox" id="click">
+    <label for="click" class="menu-btn">
+        <i class="fas fa-bars"></i>
+    </label>
+    <ul>
+        <li><a class="active" href="front.html">Home</a></li>
+        <li><a href="resume.html">Download CV</a></li>
+        <li><a href="form.html">Contact Us</a></li>
+    </ul>
+</nav>
+
     <div class="container">
         <div class="box">
           <span></span>
@@ -39,3 +46,13 @@
                 <a href="CHIN POH LIAN'S RESUME LATEST.pdf" download>Download CV</a>
             </div>
           </div>
+    </div>
+    <script>
+        const body = document.querySelector('body');
+        const toggle = document.getElementById('toggle');
+        toggle.onclick =function(){
+            toggle.classList.toggle ('active')
+            body.classList.toggle('active');
+        }
+    </script> 
+ </body>
