@@ -9,7 +9,7 @@
 
 nav{
      height:80px;
-     background:rgb(185, 185, 212);
+     background:#d89769;
      display:flex;
      align-items: center;
      justify-content:space-between;
@@ -28,12 +28,12 @@ nav ul li {
 }
 
 nav ul li a{
-    color:rgb(110, 102, 233);
+    color:#000;
     text-decoration:none;
     font-size: 18px;
     font-weight: 400;
     letter-spacing: 1px;
-    background: #fff;
+    background: #d8b4a0;
     padding: 10px 10px ;
     border-radius: 15px;
     transition: all 0.3s ease;
@@ -41,9 +41,8 @@ nav ul li a{
 
 nav ul li a:hover,
 nav ul li a:active{
-    
-    color:rgb(102, 19, 88);
-   background: rgb(224, 188, 224); 
+    color:#d77a61;
+   background: #ffd275; 
 }
 
 nav .menu-btn i{
@@ -68,7 +67,7 @@ display:block;
         position:fixed;
         top:80px;
         left:-100%;
-        background:rgb(110, 102, 233); 
+        background:#d4c59e; 
         height:100vh;
         width:100%;
         display:block;
