@@ -173,23 +173,23 @@
 		top: 20px;
 	} 
 	.left{	
-		border-left: 150px solid lightgray;
+		border-left: 150px solid #d8b4a0;
 		border-top: 180px solid transparent;
 		border-bottom: 160px solid transparent;
 	} 
 	 .right{	
-		border-right: 150px solid lightgray;
+		border-right: 150px solid #d8b4a0;
 		border-top: 180px solid transparent;
 		border-bottom: 160px solid transparent;;
 		left:150px;
 	} 
 	  .top{	
 		border-right: 150px solid transparent;
-		border-top: 200px solid lightskyblue;
+		border-top: 200px solid #d4c59e;
 		border-left: 150px solid transparent;
 	}  
 	.open{
-		border-top: 150px solid #2c3e50;
+		border-top: 150px solid #d4c59e;
 	}
 	 .bottom{
 		width: 300px;
