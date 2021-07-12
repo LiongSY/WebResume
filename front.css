@@ -76,15 +76,15 @@
     --white: #223843;
 } 
 
- @media screen and (max-width:414px){
+ @media screen and (max-width:767px) and (min-width :321px){
     .wrapper .static-txt{
-     margin-top: -400px;
+     margin-top: -115px;
      margin-left:30px;
      font-size: 40px;
     }
     .wrapper .dynamic-txts{
-     margin-top: -300px;
-     margin-left:-190px;
+     margin-top: -00px;
+     margin-left:-160px;
    }
    .dynamic-txts li span::after{
     top:16px;
@@ -93,4 +93,20 @@
    }
 
  }
+
+ @media screen and (max-width:320px) {
+    .wrapper .static-txt{
+        margin-top: -230px;
+        margin-left: 20px;
+        font-size: 40px;
+       }
+     .wrapper .dynamic-txts{
+     margin-top: -100px;
+     margin-left:-175px;
+    padding-bottom: -10px;
+    height:fit-content;
+   }
+ }
+     
+ 
 
