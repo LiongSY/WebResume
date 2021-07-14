@@ -21,9 +21,9 @@
         <i class="fas fa-bars"></i>
     </label>
     <ul>
-        <li><a class="active" href="front.html">Home</a></li>
-        <li><a href="resume.html">Download CV</a></li>
-        <li><a href="contact.html">Contact Us</a></li>
+        <li><a class="active" href="index.php">Home</a></li>
+        <li><a href="resume.php">Download CV</a></li>
+        <li><a href="contact.php">Contact Us</a></li>
     </ul>
 </nav>
 
@@ -33,7 +33,7 @@
           <div class="content">
               <h1>LIONG</h1>
               <h2>Soon Yik</h2> 
-              <p>Resume</p>
+              <p>Hire Me!</p>
               <a href="Liong Soon Yik.pdf" download>Download CV</a>
           </div>
         </div>
@@ -42,7 +42,7 @@
             <div class="content">
                 <h1>CHIN</h1>
                 <h2>Poh Lian</h2> 
-                <p>Resume</p>
+                <p>Hire Me!</p>
                 <a href="Chin Poh Lian.pdf" download>Download CV</a>
             </div>
           </div>

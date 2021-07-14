@@ -19,9 +19,9 @@
     <ul>
      
 
-        <li><a class="active" href="#">Home</a></li>
-        <li><a href="resume.html">Download CV</a></li>
-        <li><a href="contact.html">Contact Us</a></li>
+        <li><a class="active" href="index.php">Home</a></li>
+        <li><a href="resume.php">Download CV</a></li>
+        <li><a href="contact.php">Contact Us</a></li>
     </ul>
 </nav>
     <div class="wrapper">
